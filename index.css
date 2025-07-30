@@ -40,6 +40,7 @@ nav{
     height: 100vh;
     background-image: url("./image/main.jpg");
     border-radius: 25px;
+    background-repeat:no-repeat ;
     margin: 10px;
 }
 .image .container{
