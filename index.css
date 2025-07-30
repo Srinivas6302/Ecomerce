@@ -44,9 +44,10 @@ nav{
     margin: 10px;
 }
 .image .container{
-    color: aliceblue;
+    display: grid;
+    color: white;
     position: absolute;
-    top: 50%;
+    top: 280px;
     padding: 25px;
     line-height: 1.5;
 }
