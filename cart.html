@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <nav>
+        <div class="left">
+            <h1>Ecommerce</h1>
+        </div>
+        <div class="middle">
+            <ul>
+                <li><a href="/ecommerce/index.html">Home</a></li>
+                <li><a href="/ecommerce/products.html">Products</a></li>
+                <li><a href="/ecommerce/about.html">About</a></li>
+                <li><a href="/ecommerce/contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button><img width="25" height="25" src="https://img.icons8.com/sf-black/64/enter-2.png" alt="enter-2"/><a href="/ecommerce/login.html"></a>></button>
+            <button><img width="25" height="25" src="https://img.icons8.com/sf-black-filled/64/checked-user-male.png" alt="checked-user-male"/><a href="/ecommerce/register.html" >Register</a></button>
+            <button><a href="./cart.html"><img width="25" height="25" src="https://img.icons8.com/ios-glyphs/50/shopping-cart.png" alt="shopping-cart"/>Cart</a></button>
+        </div>
+    </nav>
+  </header>
+  <main>
+    </div>
+    <h2 class="cart-title">Cart</h2>
+    <div class="cart-container">
+      <div class="item-list">
+        <h3>Item List</h3>
+        <div class="item">
+          <!-- <img src="https://via.placeholder.com/80" alt="Fjallraven Backpack"> -->
+          <div class="details">
+            <p><strong> <img src="./image/1.jpg" alt="">
+              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</strong></p>
+            <div class="qty-price">
+              <button onclick="decrement()">-</button>
+              <span id="counter"></span>
+              <button onclick="increment()">+</button>
+              <span>1</span>
+              <span>1 × $109.95</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat item blocks for all products -->
+        <div class="item">
+          <div class="details">
+            <p><strong><img src="./image/3.jpg" alt="">
+              Mens Cotton Jacket</strong></p>
+            <div class="qty-price">
+              <button onclick="decrement()">-</button>
+              <span id="counter"></span>
+              <button onclick="increment()">+</button>
+              <span>1</span>
+              <button>+</button>
+              <span>1 × $55.99</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="details">
+            <p><strong> <img src="./image/5.jpg" alt="">
+              John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</strong></p>
+            <div class="qty-price">
+             <button onclick="decrement()">-</button>
+              <span id="counter"></span>
+              <button onclick="increment()">+</button>
+              <button>+</button>
+              <span>1 × $695</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="details">
+            <p><strong><img src="./image/6.jpg" alt="">
+              Solid Gold Petite Micropave</strong></p>
+            <div class="qty-price">
+              <button onclick="decrement()">-</button>
+              <span id="counter"></span>
+              <button onclick="increment()">+</button>
+              <span>1 × $168</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="details">
+            <p><strong><img src="./image/8.jpg" alt="">
+              Pierced Owl Rose Gold Plated Stainless Steel Double</strong></p>
+            <div class="qty-price">
+              <button>-</button>
+              <span id="counter">1</span>
+              <button>+</button>
+              <span>1</span>
+              <button>+</button>
+              <span>1 × $10.99</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="details">
+            <p><strong><img src="./image/11.jpg" alt="">
+              Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</strong></p>
+            <div class="qty-price">
+              <button>-</button>
+              <span id="counter">1</span>
+              <button>+</button>
+              <span>1 × $109</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="summary">
+        <h3>Order Summary</h3>
+        <p>Products (6) <span>$1149</span></p>
+        <p>Shipping <span>$30</span></p>
+        <hr />
+        <p><strong>Total amount</strong> <span><strong>$1179</strong></span></p>
+        <button class="checkout-btn">Go to checkout</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by <a href="#">AchieversIT</a></p>
+  </footer>
+  <script>
+     let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("counter").innerText = count;
+    }
+    function decrement(){
+      count--;
+      
+    }
+  </script>
+</body>
+</html>
