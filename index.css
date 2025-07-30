@@ -44,10 +44,12 @@ nav{
     margin: 10px;
 }
 .image .container{
-    display: grid;
-    color: white;
-    position: absolute;
-    top: 280px;
+ display: flex;
+      flex-direction: column; /* Stack headings vertically */
+      align-items: center;     /* Center horizontally */
+      justify-content: center; /* Center vertically (optional) */
+      height: 100vh;           /* Full height of the viewport */
+      text-align: center;
     padding: 25px;
     line-height: 1.5;
 }
